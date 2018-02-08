@@ -17,10 +17,17 @@ module.exports = {
         // --no-sandbox is needed when running Chrome inside a container
         process.env.TRAVIS ? '--no-sandbox' : null,
 
+<<<<<<< HEAD
         '--headless',
         '--window-size=1440,900',
         '--disable-gpu',
         '--remote-debugging-port=9222'
+=======
+        '--disable-gpu',
+        '--headless',
+        '--remote-debugging-port=0',
+        '--window-size=1440,900'
+>>>>>>> a7c89eb... message
       ].filter(Boolean)
     }
   }
